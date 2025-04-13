@@ -1,0 +1,177 @@
+
+:root {
+    --variable-collection-dark: rgba(48, 45, 44, 1);
+    --variable-collection-dark-10: rgba(244, 242, 240, 1);
+  }
+  
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 30px; 
+  position: relative;
+  background-color: var(--variable-collection-dark);
+  width: 100%;
+  min-height: 72px;
+}
+
+
+  .navbar .LOGO-NELSON {
+    position: relative;
+    width: 238px;
+    height: 40px;
+    object-fit: cover;
+  }
+  
+  .navbar .header {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-right: 50px;
+  }
+  
+  .navbar .div {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .navbar .text-wrapper {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-dark-10);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .navbar .keyboard-arrow-down {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .navbar .vector {
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    top: 8px;
+    left: 6px;
+  }
+  
+  .navbar .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--variable-collection-dark-10);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+
+  /* MOBILE HEADER */
+
+.navbar-mobile {
+  display: none;
+  background-color: var(--variable-collection-dark);
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navbar-mobile {
+    display: flex;
+  }
+}
+
+
+.logo-mobile {
+  width: 32px;
+  height: 32px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Menu lateral */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100%;
+  background-color: rgba(48, 45, 44, 1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: right 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  color: #1d6a6a; 
+  transform: translateX(10px); 
+}
+
+.mobile-menu a:active {
+  transform: scale(0.95); 
+}
+
+
+/* Botão de fechar */
+.close-menu {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.mobile-menu.show {
+  right: 0;
+}
+
+/*  mobile  768px */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: flex;
+  }
+}
