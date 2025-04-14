@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #155252;
     color: #fff;
@@ -7,8 +7,7 @@ body {
   
   h2 {
     text-align: center;
-    font-size: 28px;
-    font-weight: 700;
+    font-weight: 400;
     margin: 40px 0 20px;
   }
   
@@ -19,9 +18,10 @@ body {
   }
   
   .metodo h2 {
-    font-size: 28px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
     margin-bottom: 40px;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
   }
   
@@ -34,8 +34,7 @@ body {
     margin: 0 auto;
   }
   
-  .card {
-    background-color: #222;
+  .card { 
     width: 300px;
     border-radius: 12px;
     overflow: hidden;
@@ -51,21 +50,22 @@ body {
   }
   
   .card-titulo {
-    padding: 15px;
-    font-size: 15px;
+    padding: 40px 0px;
+    font-size: 16px;
     color: #fff;
-    background-color: #1a1a1a;
+    line-height: 150%; 
   }
   
   /* Parágrafo abaixo dos cards */
   .metodo-subtexto {
     margin-top: 40px;
-    font-size: 15px;
+    font-size: 18px;
     color: #cfcfcf;
     text-align: left; /* Alinhado à esquerda */
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 150%;
   }
   
   
@@ -76,10 +76,11 @@ body {
   }
 
   .sobre h2 {
-    font-size: 30px;
-    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
     margin-bottom: 20px;
     text-align: left; /* Alinha à esquerda */
+    line-height: 100%;
   }
   
   .container-sobre {
@@ -101,8 +102,9 @@ body {
   }
   
   .texto h2 {
-    font-size: 30px;
-    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
     margin-bottom: 20px;
   }
   
@@ -149,11 +151,18 @@ body {
       width: 100%; /* Ocupa a largura total */
       max-width: 100%;
     }
+
+    .metodo h2{
+      font-size: 48px;
+    } 
   
     .metodo-subtexto {
       text-align: left;
       padding: 0 15px;
+      font-size: 16px;
       margin-top: 30px;
+      font-weight: 400;
+      line-height: 150%;
     }
   
     /* Section SOBRE */
@@ -169,6 +178,11 @@ body {
     .imagem {
     width: 100%;
     padding: 0 15px;
+    }
+
+    .texto h2{
+      font-family: 30px;
+      font-weight: 400;
     }
   
     .sobre-texto, .sobre-img {
@@ -192,5 +206,117 @@ body {
       width: 100%;
     }
   }
+
+  
+  @media screen and (max-width: 768px) {
+    .container-sobre {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .texto, 
+    .imagem {
+      width: 100%;
+      flex: 0 0 auto;
+    }
+  
+    .texto h2 {
+      font-family: 30px;
+      font-weight: 400;
+      line-height: 0.9;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  
+    .texto h2 br {
+      display: block; /* Força a quebra de linha */
+    }
+  
+    .imagem {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .imagem img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .citacao {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: left;
+      padding: 0 10px;
+      line-height: 150%;
+    }
+  }
+
+
+  @media screen and (max-width: 780px) {
+    .container-sobre {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .texto, 
+    .imagem {
+      width: 100%;
+      flex: 0 0 auto;
+    }
+  
+    .texto h2 {
+      font-family: 30px;
+      font-weight: 400;
+      line-height: 0.9;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  
+    .texto h2 br {
+      display: block; /* Força a quebra de linha */
+    }
+  
+    .imagem {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .imagem img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .citacao {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: left;
+      padding: 0 10px;
+      line-height: 150%;
+    }
+  }
+
+  @media screen and (max-width: 956px) {
+    .cards-metodo {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: 400px; /* Largura máxima para os cards */
+      margin-bottom: 20px;
+    }
+  
+    .card img {
+      height: 200px; /* Altura ajustada para mobile */
+    }
+  
+    .card-titulo {
+      padding: 30px 20px; /* Padding ajustado */
+      font-size: 18px; /* Tamanho de fonte aumentado */
+    }
+  }
+  
   
   
