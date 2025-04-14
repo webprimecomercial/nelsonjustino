@@ -178,43 +178,43 @@ body {
     font-size: 14px;
     text-align: center;
     box-shadow: 0 0px 3px #428F78;
-    margin: 0; /* Remove margens padrão */
+    margin: 0; 
   }
 
   .benefits-grid p:nth-child(1) { /* Primeiro quadrado (superior esquerdo) */
     grid-column: 1;
     grid-row: 1;
     width: 140px;
-    height: 121px; /* Altura maior */
+    height: 121px; 
     display: flex;
     align-items: center;
     margin-left: 30px;
-    margin-top: 70px; /* Desce o quadrado */
+    margin-top: 70px; 
   }
 
   .benefits-grid p:nth-child(2) { /* Segundo quadrado (superior direito) */
     grid-column: 2;
     grid-row: 1;
     width: 140px;
-    height: 90px; /* Altura menor */
-    margin-top: 68px; /* Desce o quadrado */
+    height: 90px; 
+    margin-top: 68px; 
   }
 
   .benefits-grid p:nth-child(3) { /* Terceiro quadrado (inferior esquerdo) */
     grid-column: 1;
     grid-row: 2;
     width: 140px;
-    height: 60px; /* Altura menor */
-    margin-left: 30px; /* Empurra para a direita */
+    height: 60px; 
+    margin-left: 30px; 
   }
 
   .benefits-grid p:nth-child(4) { /* Quarto quadrado (inferior direito) */
     grid-column: 2;
     grid-row: 2;
     width: 140px;
-    height: 88px; /* Altura maior */
-    margin-right: 60px; /* Empurra para a esquerda */
-    margin-top: -28px; /* Sobe o quadrado */
+    height: 88px; 
+    margin-right: 60px; 
+    margin-top: -28px; 
   }
     
     .benefits-grid p {

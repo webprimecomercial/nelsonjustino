@@ -11,6 +11,19 @@ button:focus-visible {
 a {
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+#hero-section,
+#sobre-section,
+#planos-section,
+#resultados-section,
+#consulta-section,
+#footer-section {
+  scroll-margin-top: 80px; 
+}
+
 .navbar {
   display: flex;
   align-items: center;

@@ -2,45 +2,91 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <title>NJ Nutricionista</title>
     <link rel="stylesheet" href="/assets/css/global.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
+ 
   </head>
   <body>
-        <!-- MENU MOBILE -->
-        <div class="navbar-mobile">
-          <img class="logo-mobile" src="/assets/images/header/LOGO-Mobile.svg" alt="Logo" />
-          <button class="menu-toggle" id="menuToggle">&#9776;</button> 
+
+    <!-- MENU MOBILE -->
+    <div class="navbar-mobile">
+      <img class="logo-mobile" src="/assets/images/header/LOGO-Mobile.svg" alt="Logo" />
+      <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+      <button class="close-menu" id="closeMenu">&times;</button>
+      <a href="#consulta-section">Consulta</a>
+      <a href="#sobre-section">Sobre</a>
+      <a href="#resultados-section">Resultados</a>
+      <a href="#planos-section">Planos</a>
+    </nav>
+
+    <!-- MENU DESKTOP -->
+    <div class="navbar">
+      <img class="LOGO-NELSON" src="/assets/images/header/LOGO-NELSON.png" alt="Logo Nelson" />
+      <div class="header">
+        <div class="div">
+          <a href="#consulta-section" class="text-wrapper">Consulta</a>
+          <div class="keyboard-arrow-down">
+            <img class="vector" src="/assets/images/header/Vector.svg" alt="Seta" />
+          </div>
         </div>
-
-        <nav class="mobile-menu" id="mobileMenu">
-          <button class="close-menu" id="closeMenu">&times;</button> 
-          <a href="#">Consulta</a>
-          <a href="#">Sobre</a>
-          <a href="#">Resultados</a>
-          <a href="#">Planos</a>
-        </nav>
-
-      <div class="navbar">
-        <img class="LOGO-NELSON" src="/assets/images/header/LOGO-NELSON.png">
-        <div class="header">
-          <div class="div">
-            <div class="text-wrapper">Consulta</div>
-            <div class="keyboard-arrow-down"><img class="vector" src="/assets/images/header/Vector.svg" /></div>
+        <div class="div">
+          <a href="#sobre-section" class="text-wrapper">Sobre</a>
+          <div class="keyboard-arrow-down">
+            <img class="vector" src="/assets/images/header/Vector.svg" alt="Seta" />
           </div>
-          <div class="div">
-            <div class="text-wrapper">Sobre</div>
-            <div class="keyboard-arrow-down"><img class="vector" src="/assets/images/header/Vector.svg" /></div>
+        </div>
+        <div class="div">
+          <a href="#resultados-section" class="text-wrapper">Resultados</a>
+          <div class="keyboard-arrow-down">
+            <img class="vector" src="/assets/images/header/Vector.svg" alt="Seta" />
           </div>
-          <div class="div">
-            <div class="text-wrapper">Resultados</div>
-            <div class="keyboard-arrow-down"><img class="vector" src="/assets/images/header/Vector.svg" /></div>
-          </div>
-          <div class="div"><div class="text-wrapper-2">Planos</div></div>
+        </div>
+        <div class="div">
+          <a href="#planos-section" class="text-wrapper-2">Planos</a>
         </div>
       </div>
-      <div id="hero-section"></div>
-      
-    </body>
-    <script src="/assets/js/hero.js"></script>
+    </div>
 
+    <!-- Seções  -->
+    <div id="hero-section">
+    
+      <h1>Bem-vindo ao Nosso Site</h1>
+    </div>
+    <div id="sobre-section">
+    
+      <h2>Sobre</h2>
+    </div>
+    <div id="planos-section">
+     
+      <h2>Planos</h2>
+    </div>
+    <div id="investimento-section">
+
+      <h2>investimento</h2>
+    </div>
+    <div id="resultados-section">
+
+      <h2>Resultados</h2>
+    </div>
+    <div id="consulta-section">
+     
+      <h2>Consulta</h2>
+    </div>
+    <div id="footer-section">
+     
+      <p>Footer</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/hero.js"></script>
+    <script src="/assets/js/sobre.js"></script>
+    <script src="/assets/js/planos.js"></script>
+    <script src="/assets/js/investimento.js"></script>
+    <script src="/assets/js/consulta.js"></script>
+    <script src="/assets/js/footer.js"></script>
+  </body>
 </html>

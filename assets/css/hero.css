@@ -3,8 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
   color: #302d2c;
-  
-  
+    
 }
 
 .hero {
@@ -35,7 +34,7 @@ body {
 }
 
 .paragrafo-desktop {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.3;
   margin-bottom: 24px;
   max-width: 650px; 
@@ -50,10 +49,8 @@ body {
   }
 }
 
-
-
 .hero-info p:not(.paragrafo-desktop) {
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 20px;
   line-height: 1.4;
 }
@@ -133,7 +130,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding: 40px 20px;
-    height: 130vh;
+    height: 100vh;
     background:
       linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url('/assets/images/header/NJ.jpg');
@@ -141,22 +138,18 @@ body {
     background-position: center;
     background-repeat: no-repeat;
   }
-
   .titulo-mobile {
-    font-size: 100vw; 
-    line-height: 1.3;
+    font-size: 15vw; /* aumenta mais o tamanho */
+    line-height: 1.05; /* mais colado entre linhas */
     letter-spacing: 0.5px;
-    font-weight: 700;
-    margin-bottom: 16px;
-    text-align: left; 
-    align-self: flex-start;
-    padding-left: 60px;
-    padding-right: 20px;
+    font-weight: 900px;
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
     font-family: 'Bebas Neue', sans-serif;
-    width: 100%; 
-    max-width: 100%; 
-}
-
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+  }
   
   .paragrafo-mobile {
     font-family: 'Poppins', sans-serif;
@@ -232,6 +225,7 @@ body {
   }
 }
 
+/*consulta */ 
 
 .consulta {
   display: flex;
@@ -254,7 +248,7 @@ body {
   height: 380px;
   border-radius: 8px;
   object-fit: cover;
-  margin-left: 50px;
+  margin-left: 90px;
 }
 
 .consulta-right {
@@ -267,6 +261,10 @@ body {
 .consulta-right h2 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 50px;
+
+  text-align: left;
+  margin-top: 5px;
+  width: 100%;
   gap: 5px;
   line-height: 1;
   transform: translateY(50%); 
@@ -294,7 +292,7 @@ body {
   line-height: 24px;
 }
 
-/*Mobile*/
+/*Mobile consulta*/
 @media screen and (max-width: 768px) {
   .consulta-left {
     display: none; 
