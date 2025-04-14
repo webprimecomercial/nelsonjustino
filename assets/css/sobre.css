@@ -1,196 +1,321 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    background-color: #155252;
-    color: #fff;
-  }
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #155252;
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 400;
+  margin: 40px 0 20px;
+}
+
+.metodo {
+  background-color: #155252;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.metodo h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 64px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.cards-metodo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espaçamento maior entre os cards */
+  gap: 40px; /* Espaço entre os cards */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card { 
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* preenche mantendo proporção */
+  display: block;
+}
+
+.card-titulo {
+  padding: 40px 0px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 150%; 
+}
+
+/* Parágrafo abaixo dos cards */
+.metodo-subtexto {
+  margin-top: 40px;
+  font-size: 18px;
+  color: #cfcfcf;
+  text-align: left; /* Alinhado à esquerda */
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 150%;
+}
+
+
+.sobre {
+  background-color: #155252;
+  color: #ffffff;
+  padding: 60px 20px;
+}
+
+.sobre h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: left; /* Alinha à esquerda */
+  line-height: 100%;
+}
+
+.container-sobre {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+  border-top: 2px solid #DEF9E6;
+  border-bottom: 2px solid #DEF9E6;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.texto {
+  flex: 1 1 50%;
+  text-align: left; /* Alinha todo o bloco à esquerda */
+}
+
+.texto h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.texto p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left; /* Garante que os parágrafos fiquem à esquerda */
+}
+
+.imagem {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.imagem img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.citacao {
+  font-size: 14px;
+  color: #cccccc;
+  font-style: italic;
+  margin-top: 10px;
   
-  h2 {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    margin: 40px 0 20px;
-  }
-  
-  .metodo {
-    background-color: #155252;
-    color: #fff;
-    padding: 60px 20px;
-  }
-  
-  .metodo h2 {
-    font-size: 28px;
-    margin-bottom: 40px;
-    font-weight: 700;
-    text-align: center;
-  }
-  
+}
+
+.citacao p{
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  /* Section METODO */
   .cards-metodo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    gap: 40px; 
-    max-width: 1000px;
-    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
-  
+
   .card {
-    background-color: #222;
-    width: 300px;
-    border-radius: 12px;
-    overflow: hidden;
+    width: 100%; /* Ocupa a largura total */
+    max-width: 100%;
+  }
+
+  .metodo h2{
+    font-size: 48px;
+  } 
+
+  .metodo-subtexto {
+    text-align: left;
+    padding: 0 15px;
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  /* Section SOBRE */
+  .sobre-container {
     display: flex;
     flex-direction: column;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover; 
-    display: block;
-  }
-  
-  .card-titulo {
-    padding: 15px;
-    font-size: 15px;
-    color: #fff;
-    background-color: #1a1a1a;
-  }
-  
-  /* Parágrafo abaixo dos cards */
-  .metodo-subtexto {
-    margin-top: 40px;
-    font-size: 15px;
-    color: #cfcfcf;
-    text-align: left; 
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  
-  .sobre {
-    background-color: #155252;
-    color: #ffffff;
-    padding: 60px 20px;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
   }
 
-  .sobre h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-align: left; 
-  }
-  
-  .container-sobre {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 0;
-    border-top: 2px solid #DEF9E6;
-    border-bottom: 2px solid #DEF9E6;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  
-  .texto {
-    flex: 1 1 50%;
-    text-align: left; 
-  }
-  
-  .texto h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  
-  .texto p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: left; 
-  }
-  
+  .texto,
   .imagem {
-    flex: 1 1 40%;
-    text-align: center;
-  }
-  
-  .imagem img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
-  .citacao {
-    font-size: 14px;
-    color: #cccccc;
-    font-style: italic;
-    margin-top: 10px;
-    
+  width: 100%;
+  padding: 0 15px;
   }
 
-  .citacao p{
-    text-align: center;
+  .texto h2{
+    font-family: 30px;
+    font-weight: 400;
   }
-  
-  
-  @media screen and (max-width: 768px) {
 
-    /* Section METODO */
-    .cards-metodo {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-  
-    .card {
-      width: 100%; 
-      max-width: 100%;
-    }
-  
-    .metodo-subtexto {
-      text-align: left;
-      padding: 0 15px;
-      margin-top: 30px;
-    }
-  
-    /* Section SOBRE */
-    .sobre-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: left;
-      gap: 20px;
-    }
-
-    .texto,
-    .imagem {
+  .sobre-texto, .sobre-img {
     width: 100%;
     padding: 0 15px;
-    }
-  
-    .sobre-texto, .sobre-img {
-      width: 100%;
-      padding: 0 15px;
-    }
-  
-    .sobre-img img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-  
-    .sobre-citacao {
-      font-size: 14px;
-      text-align: left;
-      padding: 0 15px;
-    }
-  
-    .linha-superior, .linha-inferior {
-      width: 100%;
-    }
   }
-  
-  
+
+  .sobre-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .sobre-citacao {
+    font-size: 14px;
+    text-align: left;
+    padding: 0 15px;
+  }
+
+  .linha-superior, .linha-inferior {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .container-sobre {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .texto, 
+  .imagem {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .texto h2 {
+    font-family: 30px;
+    font-weight: 400;
+    line-height: 0.9;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .texto h2 br {
+    display: block; /* Força a quebra de linha */
+  }
+
+  .imagem {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .imagem img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .citacao {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left;
+    padding: 0 10px;
+    line-height: 150%;
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+  .container-sobre {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .texto, 
+  .imagem {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .texto h2 {
+    font-family: 30px;
+    font-weight: 400;
+    line-height: 0.9;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .texto h2 br {
+    display: block; /* Força a quebra de linha */
+  }
+
+  .imagem {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .imagem img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .citacao {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left;
+    padding: 0 10px;
+    line-height: 150%;
+  }
+}
+
+@media screen and (max-width: 956px) {
+  .cards-metodo {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px; /* Largura máxima para os cards */
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    height: 200px; /* Altura ajustada para mobile */
+  }
+
+  .card-titulo {
+    padding: 30px 20px; /* Padding ajustado */
+    font-size: 18px; /* Tamanho de fonte aumentado */
+  }
+}
+
+
