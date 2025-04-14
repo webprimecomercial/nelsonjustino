@@ -11,27 +11,28 @@ body {
   
   .pre-consulta-final {
     background-color: #155252;
-    height: auto; /* Mude de 392px para auto */
-    padding: 80px 20px 60px; /* Aumente o padding */
+    margin-bottom: 30px;
+    color: white;
+    padding: 60px 20px 40px;
+    font-family: 'Arial', sans-serif;
   }
 
   .pre-wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Mude de flex-start para center */
+    align-items: flex-start;
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 20px;
+    flex-wrap: wrap;
   }
   
    .pre-wrap h1 {
     color: #F4F2F0;
-    font-size: 60px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 700;
     max-width: 400px;
     text-align: center;
-
   }
 
   .benefits-content {
@@ -43,25 +44,24 @@ body {
   }
 
   .benefits-grid {
+    flex: 1.5;
+    min-width: 400px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    width: 100%;
+    gap: 12px; /* REDUZIDO de 20px para 12px */
     
   }
   
   .benefits-grid p {
     height: 40px;
     background: linear-gradient(90deg, #428F78, #155252);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
     color: #F4F2F0;
     font-size: 18px;
-    height: auto;
-    min-height: 80px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0px 3px #c6d6d1;
+    margin: 0;
+    box-shadow: 0 0px 3px #428F78;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
@@ -74,7 +74,6 @@ body {
     text-align: center;
     margin-top: 16px;
     font-size: 16px;
-    color: #F4F2F0;
   }
 
   .benefits-footer a {
@@ -98,8 +97,7 @@ body {
   }
   
   .pos-consulta h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 64px;
+    font-size: 2.5rem;
     margin-bottom: 40px;
     color: #1d1d1d;
   }
@@ -144,99 +142,99 @@ body {
 
 
 
- 
- 
-  @media (max-width: 768px) {
-  .pre-consulta-final {
-    padding: 40px 15px;
-    height: auto;
-  }
-  .pre-wrap {
-    flex-direction: column;
-    align-items: stretch; /* Ocupa toda a largura */
-    padding: 0;
-  }
+  /* Adicionar no início do arquivo */
+@media (max-width: 1281px) {
+    .pre-wrap {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 15px;
+    }
     
-  .pre-wrap h1 {
-    font-size: 35px;
-    margin-bottom: 30px;
-    text-align: center;
-    max-width: 100%;
-    padding: 0 10px;
-  }
+    .pre-wrap h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      text-align: center;
+      max-width: 100%;
+    }
     
     .benefits-content {
       max-width: 100%;
     }
     
     .benefits-grid {
-      grid-template-columns: 1fr; /* Muda para 1 coluna */
-      gap: 15px;
-      max-width: 100%;
-      margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 320px; /* Largura total do grid */
+    margin: 0 auto;
     }
 
     /* Estilo base para todos os quadrados */
-    .benefits-grid p {
-      width: 100% !important; /* Força ocupar toda largura */
-      height: auto !important;
-      min-height: 60px;
-      margin: 0 !important; /* Remove margens personalizadas */
-      padding: 15px 20px;
-      font-size: 16px;
-      text-align: left; /* Alinhamento igual ao da imagem */
-      display: flex;
-      align-items: center;
-    }
-
-    .benefits-grid p:nth-child(1) {
-      top: 70px;
-      left: 30px;
-      height: 120px;
-    }
-  
-    .benefits-grid p:nth-child(2) {
-      top: 70px;
-      right: 30px;
-      height: 80px;
-    }
-  
-    .benefits-grid p:nth-child(3) {
-      top: 220px;
-      left: 30px;
-      height: 80px
-    }
-  
-    .benefits-grid p:nth-child(4) {
-      top: 250px;
-      right: 30px;
-      height: 80px;
-    }
-    
   .benefits-grid p {
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #428F78, #155252);
+    color: #F4F2F0;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 0px 3px #428F78;
+    margin: 0; 
+  }
+
+  .benefits-grid p:nth-child(1) { /* Primeiro quadrado (superior esquerdo) */
+    grid-column: 1;
+    grid-row: 1;
+    width: 140px;
+    height: 121px; 
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 70px; 
+  }
+
+  .benefits-grid p:nth-child(2) { /* Segundo quadrado (superior direito) */
+    grid-column: 2;
+    grid-row: 1;
+    width: 140px;
+    height: 90px; 
+    margin-top: 68px; 
+  }
+
+  .benefits-grid p:nth-child(3) { /* Terceiro quadrado (inferior esquerdo) */
+    grid-column: 1;
+    grid-row: 2;
+    width: 140px;
+    height: 60px; 
+    margin-left: 30px; 
+  }
+
+  .benefits-grid p:nth-child(4) { /* Quarto quadrado (inferior direito) */
+    grid-column: 2;
+    grid-row: 2;
+    width: 140px;
+    height: 88px; 
+    margin-right: 60px; 
+    margin-top: -28px; 
+  }
+    
+    .benefits-grid p {
       height: auto;
       padding: 15px 10px;
       font-size: 16px;
-  }
+    }
     
-  .benefits-footer {
-      margin-top: 30px;
-      font-size: 16px;
-      padding: 0 10px;
-      text-align: center;
-      color: #F4F2F0;
-  }
+    .benefits-footer {
+      font-size: 14px;
+      margin-top: 20px;
+    }
     
-  .benefits-footer a {
-    display: inline-block;
-    margin-top: 15px;
-    color: #F4F2F0;
-    font-size: 16px;
-    text-decoration: underline;
-    font-weight: bold;
-  }
+    .benefits-footer a {
+      font-size: 14px;
+      display: block;
+      margin-top: 5px;
+    }
     
-  .pos-consulta {
+    .pos-consulta {
       padding: 40px 15px;
     }
     
@@ -262,19 +260,29 @@ body {
     .card p {
       padding: 12px 8px;
       font-size: 15px;
-      align-items: center;
     }
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
+    .pre-consulta-final {
+      padding: 40px 15px 30px;
+    }
+    
+    .pre-wrap h1 {
+      font-size: 24px;
+    }
+
+    .benefits-grid {
+        max-width: 250px;
+    }
+    
     .benefits-grid p {
       font-size: 14px;
       padding: 12px 8px;
     }
     
     .pos-consulta h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 3rem;
+      font-size: 1.5rem;
     }
     
     .card {
@@ -286,4 +294,13 @@ body {
     }
   }
 
-  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .benefits-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+    .card {
+      width: 220px;
+      min-height: 320px;
+    }
+  }

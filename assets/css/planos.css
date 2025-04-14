@@ -1,0 +1,200 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+.image-container {
+  display: block; 
+}
+
+/* mobile, ocultar a imagem */
+@media screen and (max-width: 768px) {
+  .image-container {
+    display: none;
+  }
+}
+
+.info {
+  flex: 1;
+  width: 100%;
+}
+
+.info h2 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
+  font-family: 'Bebas Neue', sans-serif;
+ 
+}
+
+/* Layout dos passos grid */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.step {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.step h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  color: #307A6B;
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+/* Distribuição dos step */
+.step:nth-child(1),
+.step:nth-child(2),
+.step:nth-child(3) {
+  grid-column: span 2;
+}
+
+.step:nth-child(4),
+.step:nth-child(5) {
+  grid-column: span 3;
+}
+
+.footer-info {
+  grid-column: span 6;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-info p {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .image-container {
+    display: none;
+  }
+
+  .info h2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-items: stretch;
+    box-sizing: border-box;
+  }
+
+  /* Steps 1 e 2 */
+  .steps .step:nth-child(1),
+  .steps .step:nth-child(2) {
+    grid-column: auto;
+    width: 100%;
+    justify-self: stretch;
+  }
+
+  /* Steps 3, 4 e 5*/
+  .steps .step:nth-child(n+3) {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .step {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .step h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #307A6B;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .step p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footer-info {
+    grid-column: 1 / -1;
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .footer-info p {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    text-align: left;
+    
+  }
+}
