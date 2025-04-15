@@ -137,5 +137,16 @@
     .card {
       width: 90%;
     }
+
+    .info-extra{
+      text-align: left; 
+      margin-left: 20px; 
+      list-style: none;
+    }
   }
-  
+  @media (max-width: 480px) {
+    .info-extra {
+      margin-left: 2vw;
+      font-size: 15px;
+    }
+  }
