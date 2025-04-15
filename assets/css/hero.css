@@ -328,3 +328,37 @@ body {
     line-height: 24px;
   }
 }
+@media screen and (max-width: 1104px) {
+.consulta-left {
+  display: none; 
+}
+.consulta-right {
+  max-width: 100%;
+  text-align: left; 
+  margin-top: -10px;
+  padding: 5px 20px 20px 20px
+}
+
+.consulta-right h2 {
+  font-size: 58px; 
+  font-weight: 800; 
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.consulta-texto p {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.consulta-texto ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.consulta-texto li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 24px;
+}
+}
