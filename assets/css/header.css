@@ -99,10 +99,6 @@ html {
     white-space: nowrap;
   }
   
-  #resultados-section {
-    visibility: hidden;
-  }
-
   /* MOBILE HEADER */
 
 .navbar-mobile {

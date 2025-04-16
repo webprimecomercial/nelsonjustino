@@ -50,6 +50,7 @@ h2 {
 }
 
 .card-titulo {
+  font-family: 'Poppins', sans-serif;
   padding: 40px 0px;
   font-size: 16px;
   color: #fff;
@@ -58,6 +59,7 @@ h2 {
 
 /* Parágrafo abaixo dos cards */
 .metodo-subtexto {
+  font-family: 'Poppins', sans-serif;
   margin-top: 40px;
   font-size: 18px;
   color: #cfcfcf;
@@ -109,6 +111,7 @@ h2 {
 }
 
 .texto p {
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 15px;
@@ -126,10 +129,12 @@ h2 {
 }
 
 .citacao {
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   color: #cccccc;
   font-style: italic;
   margin-top: 10px;
+  line-height: 150%;
   
 }
 

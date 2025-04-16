@@ -51,6 +51,9 @@ body {
 }
 
 .benefits-grid p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0%;
   line-height: 150%;
   height: 40px;
   background: linear-gradient(90deg, #428F78, #155252);
@@ -72,6 +75,8 @@ body {
 }
 
 .benefits-footer {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   text-align: center;
   margin-top: 16px;
   font-size: 15px;
@@ -139,6 +144,7 @@ transition: color 0.3s ease;
 }
 
 .card p {
+  font-family: 'Poppins', sans-serif;
   padding: 35px 10px;
   font-size: 16px;
   color: #F4F2F0;
