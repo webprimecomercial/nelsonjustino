@@ -166,6 +166,36 @@ body {
     padding-right: 10px;
     box-sizing: border-box; 
   }
+
+  @media (max-width: 566px) and (max-height: 652px) {
+    .titulo-mobile {
+      font-size: 18px; 
+      line-height: 28px;
+      
+      
+    }
+  
+    .paragrafo-mobile {
+      font-size: 13px; 
+      line-height: 20px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .titulo-mobile {
+      font-size: 40px !important;
+      line-height: 35px !important;
+      margin-top: 40px !important;
+    }
+  
+    .paragrafo-mobile {
+      font-size: 12px ;
+      line-height: 18px ;
+      margin-top: 16px ;
+    }
+  }
+  
+  
   
 
    /* Exibir apenas os mobile */
@@ -311,6 +341,24 @@ body {
     margin-top: -10px;
     padding: 5px 20px 20px 20px
   }
+
+  @media (max-width: 450px) and (min-width: 323px){
+    .consulta-right h2 {
+      font-size: 40px !important;
+      line-height: 35px !important;
+      margin-top: -15px !important;
+    }
+  
+  }
+  @media (max-width: 320px) {
+    .consulta-right h2 {
+      font-size: 40px !important;
+      line-height: 35px !important;
+      margin-top: -15px !important;
+    }
+  
+  }
+  
 
   .consulta-right h2 {
     font-size: 58px; 

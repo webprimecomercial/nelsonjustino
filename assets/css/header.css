@@ -109,7 +109,7 @@ html {
   align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width:200px) {
   .navbar-mobile {
     display: flex;
   }
@@ -121,7 +121,7 @@ html {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width:200px) {
   .navbar-mobile {
     display: flex;
     align-items: center;
@@ -213,5 +213,40 @@ html {
 
   .navbar-mobile {
     display: flex;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn-mobile {
+    font-size: 10px;
+    padding: 4px 6px;
+    max-width: 40vw;
+    margin-left: 300px;
+    overflow: hidden;
+  }
+
+  .logo-mobile {
+    max-width: 28vw;
+  }
+
+  .menu-toggle {
+    font-size: 20px;
+  }
+}
+@media (min-width: 310px) {
+  .btn-mobile {
+    font-size: 10px;
+    padding: 4px 6px;
+    max-width: 34vw;
+    margin-left: 125px;
+    overflow: hidden;
+  }
+
+  .logo-mobile {
+    max-width: 28vw;
+  }
+
+  .menu-toggle {
+    font-size: 20px;
   }
 }
