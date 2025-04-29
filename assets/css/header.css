@@ -115,6 +115,34 @@ html {
   }
 }
 
+/* Botão Mobile */
+.btn-mobile {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /
+  }
+
+  .btn-mobile {
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #1d6a6a;
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 250px; 
+  }
+}
+
+
 
 .logo-mobile {
   width: 32px;
