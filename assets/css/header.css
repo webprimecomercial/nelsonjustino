@@ -137,12 +137,10 @@ html {
     padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 10px;
     margin-left: 250px; 
   }
 }
-
-
 
 .logo-mobile {
   width: 32px;
@@ -213,40 +211,59 @@ html {
 
   .navbar-mobile {
     display: flex;
-  }
-}
-
-@media (max-width: 500px) {
-  .btn-mobile {
-    font-size: 10px;
-    padding: 4px 6px;
-    max-width: 40vw;
-    margin-left: 300px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
     overflow: hidden;
+    gap: 8px;
   }
 
   .logo-mobile {
-    max-width: 28vw;
+    max-width: 20vw;
+    height: auto;
+    flex-shrink: 0;
   }
 
   .menu-toggle {
     font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    flex-shrink: 0;
+    margin-right: 40px;
   }
 }
-@media (min-width: 310px) {
+
+@media (min-width: 310px)  {
   .btn-mobile {
     font-size: 10px;
     padding: 4px 6px;
-    max-width: 34vw;
-    margin-left: 125px;
+    max-width: 38vw;
+    text-align: right;
+  
     overflow: hidden;
+    margin-left: 50px;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    flex-shrink: 1;
   }
+}
 
-  .logo-mobile {
-    max-width: 28vw;
-  }
-
-  .menu-toggle {
-    font-size: 20px;
+@media (min-width: 400px)  {
+  .btn-mobile {
+    font-size: 10px;
+    padding: 4px 6px;
+    max-width: 38vw;
+    text-align: right;
+  
+    overflow: hidden;
+    margin-left: 150px;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    flex-shrink: 1;
   }
 }
