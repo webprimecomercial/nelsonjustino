@@ -63,7 +63,7 @@ html {
   .navbar .text-wrapper {
     position: relative;
     width: fit-content;
-    font-family: "Poppins-Regular", Helvetica;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: var(--variable-collection-dark-10);
     font-size: 16px;
@@ -90,7 +90,7 @@ html {
     position: relative;
     width: fit-content;
     margin-top: -1.00px;
-    font-family: "Poppins-Regular", Helvetica;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: var(--variable-collection-dark-10);
     font-size: 16px;
@@ -104,14 +104,16 @@ html {
 .navbar-mobile {
   display: none;
   background-color: var(--variable-collection-dark);
-  padding: 16px;
+  padding: 20px 16px; /* Aumentei o padding vertical */
   justify-content: space-between;
   align-items: center;
+  min-height: 80px;
 }
 
 @media (max-width: 768px) and (min-width:200px) {
   .navbar-mobile {
     display: flex;
+    min-height: 80px; /* Garante a altura mesmo em telas menores */
   }
 }
 
@@ -134,17 +136,17 @@ html {
     font-family: 'Poppins', sans-serif;
     border: 2px solid #1d6a6a;
     background-color: transparent;
-    padding: 8px 16px;
+    padding: 10px 16px; /* Aumentei o padding para ficar proporcional */
     border-radius: 6px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 250px; 
   }
 }
 
 .logo-mobile {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
 }
 
 .menu-toggle {
@@ -221,13 +223,13 @@ html {
   }
 
   .logo-mobile {
-    max-width: 20vw;
-    height: auto;
+    width: 40px; /* Aumentei o tamanho do logo */
+    height: 40px;
     flex-shrink: 0;
   }
 
   .menu-toggle {
-    font-size: 20px;
+    font-size: 30px;
     background: none;
     border: none;
     color: #fff;
@@ -238,8 +240,8 @@ html {
 
 @media (min-width: 310px)  {
   .btn-mobile {
-    font-size: 10px;
-    padding: 4px 6px;
+    font-size: 11px;
+    padding: 8px 12px; /* Ajuste proporcional */
     max-width: 38vw;
     text-align: right;
   
@@ -254,8 +256,8 @@ html {
 
 @media (min-width: 400px)  {
   .btn-mobile {
-    font-size: 10px;
-    padding: 4px 6px;
+    font-size: 12px;
+    padding: 10px 16px;
     max-width: 38vw;
     text-align: right;
   
@@ -266,4 +268,36 @@ html {
     text-decoration: none;
     flex-shrink: 1;
   }
+}
+
+
+
+/* Botão Agendar Consulta - Desktop */
+.btn-desktop-only {
+  display: inline-flex;
+  padding: 12px 28px; /* Aumentei o padding */
+  background-color: #155252;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: 'Bebas Neue', sans-serif; /* Alterei a fonte */
+  font-size: 18px; /* Aumentei o tamanho da fonte */
+  font-weight: 500;
+  letter-spacing: 1px; /* Adicionei espaçamento entre letras */
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.btn-desktop-only:hover {
+  background-color: #1a6b6b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(21, 82, 82, 0.3);
+}
+
+.btn-desktop-only:active {
+  transform: translateY(0);
+}
+
+.btn-desktop-only i {
+  margin-right: 8px;
 }
