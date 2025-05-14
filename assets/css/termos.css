@@ -1,0 +1,50 @@
+.termos-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #302D2C;
+  }
+  
+  .termos-container h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #307A6B;
+  }
+  
+  .data-atualizacao {
+    color: #777;
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+  
+  .termos-section {
+    margin-bottom: 30px;
+  }
+  
+  .termos-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #307A6B;
+  }
+  
+  .termos-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .termos-container {
+      margin: 30px auto;
+    }
+    
+    .termos-container h1 {
+      font-size: 32px;
+    }
+    
+    .termos-section h2 {
+      font-size: 20px;
+    }
+  }

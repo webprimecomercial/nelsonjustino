@@ -1,19 +1,214 @@
-
 .footer {
-    background-color: #302D2C; 
-    color: white;            
-    text-align: center;     
-    padding: 20px 0;        
-    position: relative;      
-    width: 100%;             
-    font-family: 'Poppins', sans-serif; 
-  }
+  background-color: #302D2C;
+  color: white;
+  padding: 40px 0 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-brand {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-brand h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.footer-logo {
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #f4f2f0;
+  max-width: 350px;
+}
+
+/* Redes Sociais */
+.social-media {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-media a {
+  color: #BFF3D4;
+  background-color: rgba(191, 243, 212, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-media a:hover {
+  background-color: #BFF3D4;
+  color: #302D2C;
+  transform: translateY(-3px);
+}
+
+.social-media i {
+  font-size: 16px;
+}
+
+.footer-section li i {
+  margin-right: 8px;
+  color: #BFF3D4;
+  width: 16px;
+  text-align: center;
+}
+
+
+.footer-sections {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  min-width: 200px;
+  flex: 1;
+  margin-right: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05); /* Fundo sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.footer-section:last-child{
+  margin-right: 0;
+}
+
+.footer-section h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #f4f2f0;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #BFF3D4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
   
   /* mobile */
   @media (max-width: 768px) {
-    .footer {
-      font-size: 14px; 
-      padding: 15px 0; 
+    .footer-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .footer-brand,
+    .footer-section {
+      min-width: 100%;
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+
+    .footer-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .footer-logo {
+      margin: 0 auto 20px;
+    }
+
+    .description {
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .social-media {
+      justify-content: center;
+    }
+    
+    .footer-section li i {
+      margin-right: 6px;
+    }
+
+    .footer-sections {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 15px;
+    }
+
+    .footer-bottom {
+      padding-top: 15px;
+      margin-top: 30px;
     }
   }
-  
+
+  /* Ajuste para telas muito pequenas */
+@media (max-width: 480px) {
+  .footer-logo {
+    max-width: 200px;
+  }
+}
